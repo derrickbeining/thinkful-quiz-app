@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bible Quiz App</title>
+        <link rel="stylesheet" type="tex/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body class="startDialogIsOpen">
+        
+        <div id="start-modal">
+            <div class="start-prompt">
+                <p>Welcome to the <strong>Bible Quiz</strong>! If you can answer all ten questions, you're a bible nerd.</p>
+            <button class="btn btn-primary btn-start">Start!</button>
+            </div>
+        </div>
+        
+        <div id="finish-modal">
+            <div class="finish-prompt">
+                <p>You finished the <strong>Bible Quiz</strong>!</p>
+                <p>You got <span class="number-correct"></span> questions correct and <span class="number-incorrect"></span> questions incorrect.</p>
+            <button class="btn btn-primary btn-retry">Try Again!</button>
+            </div>
+        </div>
+        
+        <div id="page-wrapper">
+
+            <main class="container">
+                <header>
+                    <h1 class="title-header">Bible Quiz</h1>
+                </header>
+
+                <div class="quiz-interface">
+                    <div class="question-box">
+                        <span class="question-header">Question <span class="question-number">#</span>:</span>
+                        <span class="question">Question here</span>
+                    </div>
+                    <div class="answer-box">
+                        <div class="row">
+                            <span class="answer col-sm-6">1) <span class="answer1">Answer 1</span></span>
+                            <span class="answer col-sm-6">2) <span class="answer2">Answer 2</span></span>
+                            <span class="answer col-sm-6">3) <span class="answer3">Answer 3</span></span>
+                            <span class="answer col-sm-6">4) <span class="answer4">Answer 4</span></span>
+                        </div>
+                    </div>
+                    <div class="feedback-box">
+                        <span class="feedback"></span>
+                    </div>
+                    <div class="control-box">
+                        <button class="btn btn-lg btn-success btn-next hidden">Next Question</button>
+                        <button class="btn btn-lg btn-primary btn-finish hidden">Finish</button>
+                    </div>
+
+                    <div class="stats-box">
+                        <div class="question-number-box">
+                            Question <span class="question-number">#</span> of <span class="total-number-questions">#</span>
+                        </div>
+                        <div class="score-box">
+                            <span class="number-correct">0</span> correct, <span class="number-incorrect">0</span> incorrect
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+            </main>
+        </div>
+
+
+        <script type= "text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
