@@ -67,7 +67,7 @@ li {
 }
 
 .container {
-    height: 100%;
+    
 }
 
 .control-box {
@@ -129,8 +129,9 @@ li {
     }
 
 .feedback {
+    color: #ff9605;
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     margin: 0 auto;
     text-align: center;
     width: 75%;
@@ -202,7 +203,7 @@ li {
 
 .question {
     display: inline-block;
-    font-size:1.5rem;
+    font-size:1.0rem;
     padding: 10px;
 }
 
@@ -212,7 +213,7 @@ li {
 
 .question-header {
     display: block;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     padding: 10px;
 }
 
@@ -264,7 +265,8 @@ li {
 
 .title-header {
     color: white;
-    padding: 20px 0px;
+    font-size: 2.0rem;
+    padding: 10px 0px;
 }
 
 #page-wrapper {
