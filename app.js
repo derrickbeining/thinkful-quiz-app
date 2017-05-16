@@ -220,7 +220,8 @@ function goToNextQuestionOnNext() {
 
 function openFinishModalOnFinish() {
     $(".btn-finish").click(function(event) {
-       $("body").addClass("finishDialogIsOpen"); 
+        $("#finish-modal").parent(".modal-wrapper").removeClass("hidden");
+        $("body").addClass("finishDialogIsOpen"); 
     });
 }
 

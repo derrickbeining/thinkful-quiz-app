@@ -76,7 +76,7 @@ li {
     position: relative;
 }
 
-#modal-wrapper {
+.modal-wrapper {
     position: fixed;
     height: 100%;
     width: 100%;
@@ -92,7 +92,7 @@ li {
     background: white;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     width: calc(100% - 30px);
-    position: static;
+    position: relative;
     height: 25%;
     width: 50%;
     min-height: 200px;
@@ -107,10 +107,10 @@ li {
     transform: scale(1.5);
     opacity: 0;
     pointer-events: none;
-    z-index: 9999;
+    z-index: 0;
 }
 
-.startDialogIsOpen #modal-wrapper {
+.startDialogIsOpen .modal-wrapper {
     z-index: 999;
 }
 
@@ -121,6 +121,7 @@ li {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
+    z-index: 9999;
 }
 
 .startDialogIsOpen #page-wrapper {
@@ -154,7 +155,7 @@ li {
     background: white;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     width: calc(100% - 30px);
-    position: static;
+    position: relative;
     height: 25%;
     width: 50%;
     min-height: 200px;
@@ -169,10 +170,10 @@ li {
     transform: scale(1.5);
     opacity: 0;
     pointer-events: none;
-    z-index: 9999;
+    z-index: 0;
 }
 
-.finishDialogIsOpen #modal-wrapper {
+.finishDialogIsOpen .modal-wrapper {
     z-index: 999;
 }
 
@@ -182,6 +183,7 @@ li {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
+    z-index: 9999;
 }
 
 
