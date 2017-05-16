@@ -12,20 +12,23 @@
     </head>
     <body class="startDialogIsOpen">
         
-        <div id="start-modal">
-            <div class="start-prompt">
-                <p>Welcome to the <strong>Bible Quiz</strong>! If you can answer all ten questions, you're a bible nerd.</p>
-            <button class="btn btn-primary btn-start">Start!</button>
+        <div id="modal-wrapper">
+            <div id="start-modal">
+                <div class="start-prompt">
+                    <p>Welcome to the <strong>Bible Quiz</strong>! If you can answer all ten questions, you're a bible nerd.</p>
+                <button class="btn btn-primary btn-start">Start!</button>
+                </div>
+            </div>
+
+            <div id="finish-modal">
+                <div class="finish-prompt">
+                    <p>You finished the <strong>Bible Quiz</strong>!</p>
+                    <p>You got <span class="number-correct"></span> questions correct and <span class="number-incorrect"></span> questions incorrect.</p>
+                <button class="btn btn-primary btn-retry">Try Again!</button>
+                </div>
             </div>
         </div>
         
-        <div id="finish-modal">
-            <div class="finish-prompt">
-                <p>You finished the <strong>Bible Quiz</strong>!</p>
-                <p>You got <span class="number-correct"></span> questions correct and <span class="number-incorrect"></span> questions incorrect.</p>
-            <button class="btn btn-primary btn-retry">Try Again!</button>
-            </div>
-        </div>
         
         <div id="page-wrapper">
 
@@ -51,8 +54,8 @@
                         <span class="feedback"></span>
                     </div>
                     <div class="control-box">
-                        <button class="btn btn-lg btn-success btn-next hidden">Next Question</button>
-                        <button class="btn btn-lg btn-primary btn-finish hidden">Finish</button>
+                        <button class="btn btn-success btn-next hidden">Next Question</button>
+                        <button class="btn btn-primary btn-finish hidden">Finish</button>
                     </div>
 
                     <div class="stats-box">

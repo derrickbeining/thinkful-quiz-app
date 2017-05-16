@@ -1,4 +1,4 @@
-$(function() {
+(function() {
 'use strict';
 var state = {
     quizQuestionData: [
@@ -231,12 +231,13 @@ function restartQuizOnRetry() {
     });
 }
 
-
-initiateQuiz();
-closeDialogOnStart();
-evaluateUserAnswerOnClick();
-goToNextQuestionOnNext();
-openFinishModalOnFinish();
-restartQuizOnRetry();
+$(function() {
+    initiateQuiz();
+    closeDialogOnStart();
+    evaluateUserAnswerOnClick();
+    goToNextQuestionOnNext();
+    openFinishModalOnFinish();
+    restartQuizOnRetry();
+})
 
 })()

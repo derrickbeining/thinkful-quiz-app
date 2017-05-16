@@ -76,26 +76,31 @@ li {
     position: relative;
 }
 
+#modal-wrapper {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
 #page-wrapper {
     height: 100%;
+    width: 100%;
 }
 
 #start-modal {
     background: white;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     width: calc(100% - 30px);
-    position: absolute;
+    position: static;
     height: 25%;
     width: 50%;
     min-height: 200px;
     min-width: 200px;
     max-height: 400px;
     max-width: 400px;
-    top: 50%;
-    left: 50%;
-    margin: -25% 0 0 -25%;
-    -webkit-transform: translate(50%, 50%);
-    transform: translate(50%, 50%);
+    margin: 0 auto;
+    top: 25%;
     -webkit-transform: scale(1.5);
     -ms-transform: scale(1.5);
     padding: 20px;
@@ -103,6 +108,10 @@ li {
     opacity: 0;
     pointer-events: none;
     z-index: 9999;
+}
+
+.startDialogIsOpen #modal-wrapper {
+    z-index: 999;
 }
 
 
@@ -145,18 +154,15 @@ li {
     background: white;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     width: calc(100% - 30px);
-    position: absolute;
+    position: static;
     height: 25%;
     width: 50%;
     min-height: 200px;
     min-width: 200px;
     max-height: 400px;
     max-width: 400px;
-    top: 50%;
-    left: 50%;
-    margin: -25% 0 0 -25%;
-    -webkit-transform: translate(50%, 50%);
-    transform: translate(50%, 50%);
+    margin: 0 auto;
+    top: 25%;
     -webkit-transform: scale(1.5);
     -ms-transform: scale(1.5);
     padding: 20px;
@@ -164,6 +170,10 @@ li {
     opacity: 0;
     pointer-events: none;
     z-index: 9999;
+}
+
+.finishDialogIsOpen #modal-wrapper {
+    z-index: 999;
 }
 
 .finishDialogIsOpen #finish-modal {
@@ -187,7 +197,13 @@ li {
     -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
     -webkit-user-select: none; /* Chrome, Safari, and Opera */
     -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
-    }
+}
+
+.finish-prompt {
+    padding: 5px;
+    padding-top: 15%;
+    text-align: center;
+}
 
 .not-clickable {
     pointer-events: none;
