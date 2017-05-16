@@ -164,7 +164,7 @@ function initiateQuiz() {
     renderUserScoreCorrect();
     renderUserScoreIncorrect();
     renderTotalNumOfQuestions();
-    showButtonNext();
+    hideButtonNext();
     hideButtonFinish();
 }
 
