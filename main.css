@@ -220,7 +220,7 @@ li {
 .question-number-box {
     bottom: 0;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 0.9rem;
     position: relative;
     text-align: center;
     width: 50%;
@@ -230,7 +230,7 @@ li {
     background-color: #fff;
     margin: 0 auto;
     max-width: 600px;
-    min-width: 300px;
+
     position: relative;
 }
 
@@ -244,7 +244,7 @@ li {
 .score-box {
     bottom: 0;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 0.9rem;
     position: relative;
     right: 0;
     text-align: center;
