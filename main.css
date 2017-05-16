@@ -10,7 +10,7 @@ body, #page-wrapper, #start-modal, #finish-modal {
 header {
     margin: 0 auto;
     margin-bottom: 20px;
-    max-width: 90%;
+    max-width: 600px;
 }
 
 html {
@@ -31,8 +31,13 @@ li {
 .answer {
     border: 1px gray solid;
     display: block;
-    height: 100px;
+    height: 50px;
     padding: 15px;
+}
+
+.answer-box {
+    margin: 0 auto;
+    max-width: 90%;
 }
 
 .answer:hover {
@@ -196,12 +201,13 @@ li {
 }
 
 .question {
+    display: inline-block;
     font-size:1.5rem;
     padding: 10px;
 }
 
 .question-box {
-    height: 200px;
+    padding: 10px;
 }
 
 .question-header {
@@ -222,8 +228,7 @@ li {
 .quiz-interface {
     background-color: #fff;
     margin: 0 auto;
-    max-width: 90%;
-    min-height: 300px;
+    max-width: 600px;
     min-width: 300px;
     position: relative;
 }
